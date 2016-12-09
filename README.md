@@ -1,6 +1,6 @@
 # Martian-Robots
  
-The Problem 
+# The Problem 
 
 The surface of Mars can be modelled by a rectangular grid around which robots are able to
 move according to instructions provided from Earth. You are to write a program that
@@ -10,13 +10,12 @@ y-coordinate) and an orientation (N, S, E, W for north, south, east, and west).
 A robot instruction is a string of the letters “L”, “R”, and “F” which represent, respectively, the
 instructions:
 
-● Left : the robot turns left 90 degrees and remains on the current grid point.
+# Left : the robot turns left 90 degrees and remains on the current grid point.
 
-● Right : the robot turns right 90 degrees and remains on the current grid point.
+# Right : the robot turns right 90 degrees and remains on the current grid point.
 
-● Forward : the robot moves forward one grid point in the direction of the current
+# Forward : the robot moves forward one grid point in the direction of the current orientation and maintains the same orientation.
 
-orientation and maintains the same orientation.
 The direction North corresponds to the direction from grid point (x, y) to grid point (x, y+1).
 There is also a possibility that additional command types may be required in the future and
 provision should be made for this.
@@ -27,7 +26,7 @@ the last grid position the robot occupied before disappearing over the edge. An 
 move “off” the world from a grid point from which a robot has been previously lost is simply
 ignored by the current robot.
 
-The Input 
+# The Input 
 
 The first line of input is the upper-right coordinates of the rectangular world, the lower-left
 coordinates are assumed to be 0, 0.
@@ -48,7 +47,7 @@ position and orientation of the robot. If a robot falls off the edge of the grid
 should be printed after the position and orientation.
 
 
-Sample Input
+# Sample Input
 
 5 3
 
@@ -61,8 +60,9 @@ FRRFLLFFRRFLL
 0 3 W
 LLFFFLFLFL
 
-Sample Output
+# Sample Output
 
 1 1 E
 3 3 N LOST
 2 3 S
+
