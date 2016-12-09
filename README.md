@@ -1,19 +1,26 @@
 # Martian-Robots
 
+
 # Commands to Run the code in terminal
 
-'$ cd filePath'
-'$ scala Robot.scala'
+`$ cd filePath`
+
+`$ scala Robot.scala`
+
 
 # To change the instructions or grid size 
 
+
 Change the content of the Instructions.txt or change the file path in Robot.scala
 
-'val lines = Source.fromFile(newFileName/Path).getLines.toList'
+`val lines = Source.fromFile(newFileName/Path).getLines.toList`
+
 
 # Results
 
+
 Results will be displayed in the terminal and added to the Solution.txt file
+
 
  
 # The Problem 
