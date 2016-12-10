@@ -39,12 +39,18 @@ def appendToFile(p: String, s: String): Unit = {
 
 
 for(robot <- 0 until nr_robots) {
+	/**
+	* Initialize position x and y for the new robot
+	* And his initial orientation
+	*/
 	var position_x = initial_postion(robot)(0).toInt - 48
 	var position_y = initial_postion(robot)(1).toInt - 48
 	var index = orientation.indexOf(initial_postion(robot)(2))
 	var lost = false
 	for(move <- moves(robot)) {
 		if(!lost) {
+
+			// Check what type of intrusctions is
 			move match {
 				case 'R' =>  if(index == 3) index = 0
 							 	else index += 1
@@ -88,9 +94,11 @@ for(robot <- 0 until nr_robots) {
 		}
 	}
 
-	if(!lost)
-		answer += "\n" + position_x + " " + position_y + " " + orientation(index)
-	else 	answer += "\n" + position_x + " " + position_y + " " + orientation(index) + " LOST"
+	// Create the output
+	answer += "\n" + position_x + " " + position_y + " " + orientation(index)
+	
+	// Add the lost tag if the robot got lost
+	if(lost) answer += " LOST"
 }
 
 
